@@ -17,34 +17,35 @@ project:
     - spi.v
   top_module:  "tt_um_spi_example"
 
-  # Pinout Configuration
-  pinout:
-    # Inputs
-    ui[0]: "sck"
-    ui[1]: "mosi"
-    ui[2]: "cs_n"
-    ui[3]: ""
-    ui[4]: ""
-    ui[5]: ""
-    ui[6]: ""
-    ui[7]: ""
+pinout:
+  # Inputs
+  ui[0]: "sck"
+  ui[1]: "mosi"
+  ui[2]: "cs_n"
+  ui[3]: ""
+  ui[4]: ""
+  ui[5]: ""
+  ui[6]: ""
+  ui[7]: ""
 
-    # Outputs
-    uo[0]: "miso"
-    uo[1]: "data_ready"
-    uo[2]: ""
-    uo[3]: ""
-    uo[4]: ""
-    uo[5]: ""
-    uo[6]: ""
-    uo[7]: ""
+  # Outputs
+  uo[0]: "miso"
+  uo[1]: "data_ready"
+  uo[2]: ""
+  uo[3]: ""
+  uo[4]: ""
+  uo[5]: ""
+  uo[6]: ""
+  uo[7]: ""
 
-    # Bidirectional
-    uio[0]: "data_out[0]"
-    uio[1]: "data_out[1]"
-    uio[2]: "data_out[2]"
-    uio[3]: "data_out[3]"
-    uio[4]: "data_out[4]"
-    uio[5]: "data_out[5]"
-    uio[6]: "data_out[6]"
-    uio[7]: "data_out[7]"
+  # Bidirectional
+  uio[0]: "data_out[0]"
+  uio[1]: "data_out[1]"
+  uio[2]: "data_out[2]"
+  uio[3]: "data_out[3]"
+  uio[4]: "data_out[4]"
+  uio[5]: "data_out[5]"
+  uio[6]: "data_out[6]"
+  uio[7]: "data_out[7]"
+
+yaml_version: 4
