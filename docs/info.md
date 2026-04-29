@@ -1,20 +1,17 @@
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
+---
+title: SPI Peripheral
+author: Your Name
+language: Verilog
+---
 
 ## How it works
 
-Explain how your project works
+This project implements a simple SPI slave peripheral. It receives an 8-bit value via the standard SPI pins (SCK, MOSI, CS_N) and outputs the received data to the bidirectional pins.
 
 ## How to test
 
-Explain how to use your project
-
-## External hardware
-
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+To test the design, act as an SPI Master:
+1. Bring `cs_n` (Chip Select) low.
+2. Toggle the `sck` (Clock) pin while feeding data bits into the `mosi` pin.
+3. Observe the `miso` pin for data out, and the `data_ready` pin indicating a full byte has been received.
+4. The fully assembled byte will be available on the bidirectional IOs (`uio_out`).
