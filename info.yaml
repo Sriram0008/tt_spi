@@ -3,7 +3,7 @@
 project:
   urn: "github.com/user/tt_spi_example"
   title: "SPI Peripheral"
-  author: "sriram"
+  author: "Your Name"
   slack: ""
   description: "A simple SPI Slave module"
   language: "Verilog"
@@ -48,4 +48,4 @@ pinout:
   uio[6]: "data_out[6]"
   uio[7]: "data_out[7]"
 
-yaml_version: 4
+yaml_version: 6
